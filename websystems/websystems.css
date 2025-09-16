@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-style: bold;
+}
+
+#header {
+	background-color: #333333;
+	color: #eeeeee;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+
+ul.navbar {
+  background-color: #333333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
