@@ -1,15 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Comments Page</title>
+    <meta charset="utf-8">
+    <title>Comments</title>
     <link rel="stylesheet" href="websystems.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   </head>
   <body>
-    <a href="index.html">Home Page</a></br>
-    <a href="past.html">My Past</a></br>
-    <a href="future.html">My Future</a></br>
-    <a href="comments.html">Comments</a></br>
-    Comments Page
+    <div>
+    <h1>Web Systems Assignment </h1> 
+    </div>   
+    
+    <div id="header">
+      <ul class="navbar">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="past.html">Past</a>
+        </li>
+        <li>
+          <a href="future.html">Future</a>
+        </li>
+        <li>
+          <a href="comments.html" class="active">Comments</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+    <h2>Comments</h2>
+    </div>
+    <div>
+      <h2 class="header"> Website Structure</h2>
+      <h3>The website is made up of 4 different HTML webpages and 1 CSS stylesheet. Each webpage is 
+        described below:</h3>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Filename</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>index.html</td>
+          <td>The homepage of the website. It contains a brief introduction about myself and my current
+            hobby</td>
+        </tr>
+        <tr>
+          <td>past.html</td>
+          <td>Contains information about my past, including my high school and university experience</td>
+        </tr>
+        <tr>
+          <td>future.html</td>
+          <td>Contains information about my future goals</td>
+        </tr>
+        <tr>
+          <td>comments.html</td>
+          <td>Contains comments about the website structure and design choices</td>
+        </tr>
+        <tr>
+          <td>websystems.css</td>
+          <td>Contains the styling for the website</td>
+        </tr>
+      </tbody>
+    </table>    
+    <div>
+      <h2 class="header">Header</h2>
+    </div>
+    <div>
+      <h3>The header div which contains the website title "Web Systems Assignment" is utilised across 
+        all of the webpages using the <code> h1 </code> tag. 
+      </h3>
+      <h3>The header div also contains the navigation bar which consists of 4 buttons that direct to 
+        their respective webpages. The buttons are for the home page (index.html), past page (past.html), 
+        future page (future.html) and comments page (comments.html).</h3>
+    </div>
+    <div>
+      <h2 class="header">CSS Configurations</h2>
+      <h3>The table below highlights the main CSS configurations implemented:</h3>
+    </div>
+    <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>What it does</th>
+          <th>Used on</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>body</code></td>
+          <td>Reset margins, set base font to Fira Sans</td>
+          <td>Entire site</td>
+        </tr>
+        <tr>
+          <td><code>#header</code></td>
+          <td>Dark bar with light text behind title & navbar</td>
+          <td>Header</td>
+        </tr>
+        <tr>
+          <td><code>ul.navbar</code></td>
+          <td>Flex layout, centers nav items horizontally</td>
+          <td>Navigation</td>
+        </tr>
+        <tr>
+          <td><code>ul.navbar a:hover</code> &amp; <code>a.active</code></td>
+          <td>Hover/active highlight</td>
+          <td>Navigation links</td>
+        </tr>
+        <tr>
+          <td><code>h2</code></td>
+          <td>Section headings with bottom border underline</td>
+          <td>Page section titles</td>
+        </tr>
+        <tr>
+          <td><code>img.center</code> &amp; <code>video</code></td>
+          <td>Centered media via block + auto margins</td>
+          <td>Future page images & home page video</td>
+        </tr>
+        <tr>
+          <td><code>footer</code>, <code>.footer-left</code>, <code>.footer-right</code></td>
+          <td>Dark footer, left/right text alignment</td>
+          <td>Footer on all pages</td>
+        </tr>
+        <tr>
+          <td><code>table</code> &amp; <code>thead th</code></td>
+          <td>Centered table, collapsed borders, dark header row</td>
+          <td>Projects/comments tables</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div>
+      <h2 class="header">Aesthetics</h2>
+      <h3>The aesthetics used for this website was chosen based on readability
+        and how pleasing it is to read. The colour theme used is a combination of 
+        a beige background for bars, light green background and white text for headers
+        of the bars. This theme aims to be easy on the eyes and not too harsh. 
+        The font used compliments this theme as it is a sans-serif font which is
+        also easy to read and is modern looking, resulting in a website that is not 
+        too overbearing and is simple.
+      </h3>
+    </div>
+    <div>
+      <h2 class="header"><code>Alt</code> tag</h2>
+      <h3>Though the tag is not used much in this website, it is important for accessibility. 
+        The <code>alt</code> attribute provides a text alternative for images, 
+        which can be helpful for users who are experiencing visual interferences.</h3>
+    </div>
+    <footer>
+      <span class="footer-left">Website by Mark © 2025</span>
+      <span class="footer-right">
+        University of Technology, Sydney<br>
+        <span class="course">31268 Web Systems</span>
+      </span>
+    </footer>
   </body>
 </html>
 

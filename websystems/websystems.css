@@ -1,41 +1,122 @@
 body {
   margin: 0;
-  font-family: sans-serif;
-  font-style: bold;
+  font-family: 'Fira Sans', sans-serif;
+  background: #E7E8D1;
+  color: #1a1a1a;
+}
+
+img.center {
+  display: block;
+  margin: 20px auto;   /* centers horizontally */
+  width: 400px;     /* prevent overflow on small screens */
+  height: auto;
 }
 
 #header {
-	background-color: #333333;
-	color: #eeeeee;
+  background: #B85042;
+  color: #ffffff;
 }
 
 h1 {
   text-align: center;
 }
 
-h3 {
-  padding: 10px;
-  margin: 0;
-  text-align: left;
+h2 {
+  padding: 15px;
+  font-size: 28px;
+  border-bottom: 2px solid #B85042;
+  padding-bottom: 5px;
 }
 
+h2.header{
+  padding: 15px;
+  font-size: 20px;
+  border-bottom: none;
+  padding-bottom: 5px;
+} 
+
+h3 {
+  padding: 15px;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.center {
+  text-align: center;
+}
+
+video {
+  display: block;
+  margin: 20px auto;
+}
+
+footer {
+  background: #B85042;
+  color: #ffffff;
+  text-align: left;
+  padding: 30px 40px 65px;
+}
+
+.footer-left {
+  float: left;
+  text-align: left;
+  padding: 10px
+}
+
+.footer-right {
+  float: right;
+  text-align: right;
+  line-height: 1.6; 
+}
+
+
 ul.navbar {
-  background-color: #333333;
+  background: #B85042;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex; 
   overflow: hidden;
-}
-
-ul.navbar li {
-  float: left;
+  justify-content: center;
 }
 
 ul.navbar li a {
   display: block;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
+ul.navbar li a:hover {
+  background: #A7BEAE; /* change colour based on my colour theme */
+  color: #1a1a1a;            /* change colour based on my colour theme */
+}
+
+ul.navbar a.active {
+  background: #A7BEAE; /* change colour based on my colour theme */
+  color: #1a1a1a;           /* change colour based on my colour theme */
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 1rem;
+  width: 50%;
+  margin: 0 auto 24px;
+}
+
+table th,
+table td {
+  border: 1px solid #D7D8C4;
+  padding: 10px 12px;
+  vertical-align: top;
+  text-align: left;
+}
+
+table thead th {
+  background: #B85042;   /* matches navbar/footer */
+  color: #ffffff;
+}
